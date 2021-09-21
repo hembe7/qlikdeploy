@@ -1,0 +1,145 @@
+{
+	"name":	"Test-New-Cluster__2021-08-27--16-12-22-887071",
+	"cmd.replication_definition":	{
+		"tasks":	[{
+				"task":	{
+					"name":	"Test-New-Cluster",
+					"source_name":	"AS400-Source",
+					"target_names":	["DeltaLake-Dest"]
+				},
+				"source":	{
+					"rep_source":	{
+						"source_name":	"AS400-Source",
+						"database_name":	"AS400-Source"
+					},
+					"source_tables":	{
+						"name":	"AS400-Source",
+						"explicit_included_tables":	[{
+								"owner":	"$GMLLIB",
+								"name":	"GMF309PF",
+								"validation_sampling_percentage":	0
+							}]
+					}
+				},
+				"targets":	[{
+						"rep_target":	{
+							"target_name":	"DeltaLake-Dest",
+							"target_state":	"DISABLED",
+							"database_name":	"DeltaLake-Dest"
+						}
+					}],
+				"task_settings":	{
+					"source_settings":	{
+					},
+					"target_settings":	{
+						"default_schema":	"structured",
+						"queue_settings":	{
+							"message_shape":	{
+							},
+							"key_shape":	{
+							}
+						},
+						"ftm_settings":	{
+						},
+						"artifacts_cleanup_enabled":	false
+					},
+					"sorter_settings":	{
+						"local_transactions_storage":	{
+						}
+					},
+					"common_settings":	{
+						"change_table_settings":	{
+							"header_columns_settings":	{
+							}
+						},
+						"audit_table_settings":	{
+						},
+						"save_changes_enabled":	true,
+						"dr_settings":	{
+						},
+						"statistics_table_settings":	{
+						},
+						"bidi_table_settings":	{
+						},
+						"task_uuid":	"d9bf86a8-2b06-2f4f-8ef5-49d4175a8b1f",
+						"status_table_settings":	{
+						},
+						"suspended_tables_table_settings":	{
+						},
+						"history_table_settings":	{
+						},
+						"exception_table_settings":	{
+						},
+						"recovery_table_settings":	{
+						},
+						"data_batching_settings":	{
+						},
+						"data_batching_table_settings":	{
+						},
+						"log_stream_settings_depricated":	{
+						},
+						"ddl_history_table_settings":	{
+						},
+						"customized_charset_settings":	{
+							"validation":	{
+								"sub_char":	0
+							}
+						}
+					}
+				},
+				"loggers":	{
+					"$type":	"RepTaskLoggers",
+					"loggers_configuration":	{
+					},
+					"SOURCE_CAPTURE":	"DETAILED_DEBUG"
+				}
+			}],
+		"databases":	[{
+				"name":	"AS400-Source",
+				"role":	"SOURCE",
+				"is_licensed":	true,
+				"type_id":	"DB2I_NATIVE_COMPONENT_TYPE",
+				"db_settings":	{
+					"$type":	"Db2iSettings",
+					"username":	"DLDEV",
+					"password":	"{ZA56FF3EFCE19256EAD346B1293A2BA67405C2A2DC3BD3C110}",
+					"server":	"PLTDEV",
+					"EventsPollInterval":	20,
+					"connectMode":	"CONNECTION_STRING",
+					"JournalName":	"DLAKEJRN",
+					"JournalLibrary":	"$OLLIB",
+					"SkipJournalValidation":	true,
+					"useCaptureUDT":	true
+				},
+				"override_properties":	{
+				}
+			}, {
+				"name":	"DeltaLake-Dest",
+				"role":	"TARGET",
+				"is_licensed":	true,
+				"type_id":	"DATABRICKS_AZURE_DELTA_COMPONENT_TYPE",
+				"db_settings":	{
+					"$type":	"DatabricksazuredeltaSettings",
+					"password":	"{ZAD76D36A7A07EDD56C85A50C42CB69FFA5B782021020FD04E216D7B511A4C949AAD1329AC359702DE1726CCE827141000B0B60550A61245A6}",
+					"database":	"structured_as400_db",
+					"stagingdirectory":	"/as400",
+					"hiveODBCHost":	"adb-3795326384515844.4.azuredatabricks.net",
+					"httpPath":	"sql/protocolv1/o/3795326384515844/0824-033704-water717",
+					"adlsstorageaccountname":	"stathlifedevaz1i3d589001",
+					"adlstenantid":	"3e706954-8635-4afc-abd8-bc712a61cea7",
+					"adlsclientappid":	"bca4be15-c494-4660-b38b-a3265808b328",
+					"adlsclientappkey":	"{ZAAE769466643FCD79DDCEFA5F66C959A3B719D21D812E18CFCC6D1BD82B6291885F402C2401EB6F9E4E22F225E1777058CB9791D5D6A113C6}",
+					"filesystem":	"landing"
+				},
+				"override_properties":	{
+				}
+			}]
+	},
+	"_version":	{
+		"version":	"2021.5.0.745",
+		"version_major":	2021,
+		"version_minor":	5,
+		"version_revision":	745
+	},
+	"description":	"Host name: thlifelz1sobv8v.PRU.intranet.asia, Time: 2021-08-27 16:12:22.887071"
+}
