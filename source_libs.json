@@ -1,0 +1,15 @@
+{
+    "libs":[
+        {"DEV":"$CLMLIB", "UAT":"XCLMLIB", "PROD":"CLMLIB"},
+        {"DEV":"$CLMLIB2", "UAT":"XCLMLIB2", "PROD":"CLMLIB2"},
+        {"DEV":"$EPOSLIB", "UAT":"XEPOSLIB", "PROD":"EPOSLIB"},
+        {"DEV":"$GMLLIB", "UAT":"XGMLLIB", "PROD":"GMLLIB"},
+        {"DEV":"$GMLLIB2", "UAT":"XGMLLIB2", "PROD":"GMLLIB2"},
+        {"DEV":"$GRLIBDTA", "UAT":"XGRLIBDTA", "PROD":"GRLIBDTA"},
+        {"DEV":"$OLLIB", "UAT":"XOLLIB", "PROD":"OLLIB"},
+        {"DEV":"$OLLIB2", "UAT":"XOLLIB2", "PROD":"OLLIB2"},
+        {"DEV":"$PADATA", "UAT":"XPADATA", "PROD":"PADATA"},
+        {"DEV":"$PRUDTA", "UAT":"XPRUDTA", "PROD":"PRUDTA"},
+        {"DEV":"$YODALIB", "UAT":"XYODALIB", "PROD":"YODALIB"}
+    ]
+}

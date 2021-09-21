@@ -1,0 +1,21 @@
+{
+    "source":{
+        "username":	"DLDEV",
+		"password":	"{ZA56FF3EFCE19256EAD346B1293A2BA67405C2A2DC3BD3C110}",
+		"server":	"PLTDEV",
+		"JournalName":	"DLAKEJRN",
+		"JournalLibrary":	"$OLLIB"
+    },
+    "target":{
+		"password":	"{ZAD76D36A7A07EDD56C85A50C42CB69FFA5B782021020FD04E216D7B511A4C949AAD1329AC359702DE1726CCE827141000B0B60550A61245A6}",
+		"database":	"structured_as400_db",
+		"stagingdirectory":	"/as400",
+		"hiveODBCHost":	"adb-3795326384515844.4.azuredatabricks.net",
+		"httpPath":	"sql/protocolv1/o/3795326384515844/0824-033704-water717",
+		"adlsstorageaccountname":	"stathlifedevaz1i3d589001",
+		"adlstenantid":	"3e706954-8635-4afc-abd8-bc712a61cea7",
+		"adlsclientappid":	"bca4be15-c494-4660-b38b-a3265808b328",
+		"adlsclientappkey":	"{ZAAE769466643FCD79DDCEFA5F66C959A3B719D21D812E18CFCC6D1BD82B6291885F402C2401EB6F9E4E22F225E1777058CB9791D5D6A113C6}",
+		"filesystem":	"landing"
+    }
+}
